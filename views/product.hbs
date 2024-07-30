@@ -1,0 +1,16 @@
+<h1>Pizza {{name}}</h1>
+{{#if price}}
+<h2>Price: {{price}}</h2>
+{{else}}
+<h2>Price upon request</h2>
+{{/if}}
+<img src="/images/{{imgName}}" alt="{{imgAlt}}" width="500" />
+<br>
+<br>
+<ul>
+    {{#each ingredients}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<br>
+<br>
